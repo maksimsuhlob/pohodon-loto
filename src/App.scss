@@ -1,0 +1,117 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: antiquewhite;
+}
+
+.header {
+  background-color: aliceblue;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+}
+
+button {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: cornflowerblue;
+  color: white;
+  &:disabled{
+    background-color: #ccc;
+  }
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #fff;
+}
+
+.body {
+  flex: 1;
+}
+
+.game, .admin {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__row {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__cell {
+    width: 30%;
+    height: 60px;
+    display: flex;
+    vertical-align: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+.error{
+  padding: 20px;
+  background-color: tomato;
+  border-radius: 5px;
+  margin-top: 20px;
+  color: aliceblue;
+}
+.numbers{
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.number{
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid blue;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+.members{
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  &__title{
+    font-weight: bold;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__cell{
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fff;
+    &--checked{
+      background-color: chartreuse;
+    }
+  }
+}
