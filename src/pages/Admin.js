@@ -66,6 +66,7 @@ function Admin() {
             }
             setNumbers(availableNumbers)
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [myGameId]);
 
     return (<div className={'admin'}>
